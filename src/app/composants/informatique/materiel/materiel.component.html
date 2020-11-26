@@ -1,0 +1,18 @@
+
+
+<div class="card text-center">
+    <div class="card-header">
+        {{t.libelle |titlecase}}
+
+    </div>
+    <div class="card-body">
+        <img [src]="t.photo" width="120" height="120"><br>
+<ng-container *ngIf="t.hautGamme==true">
+<span class="badge badge-pill badge-primary"> Prix : {{t.prix}} DT <span class="fa fa-thumbs-up"></span></span></ng-container>
+<ng-container *ngIf="t.hautGamme==false"><span class="badge badge-pill badge-dark"> Prix : {{t.prix}} DT </span>
+</ng-container>
+    </div>
+    <div class="card-footer text-muted">
+        <button type="button" class="btn btn-primary">details</button>
+    </div>
+</div>

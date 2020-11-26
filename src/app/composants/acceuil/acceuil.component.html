@@ -1,0 +1,13 @@
+<h3 class="text-center">bienvenue au supermarché '{{nomSupermarket}}'</h3>
+
+<div class="row">
+      <ng-container *ngFor="let t of lesCategories">
+      <div class="col-6">
+      <center>
+        <img [src]="t.image" width="200" height="200" class="rounded-circle"><br>
+      <p class="badge badge-secondary badge-dark" >{{t.nom |uppercase}}</p> 
+      </center>
+      </div>
+      </ng-container>
+      </div>
+
