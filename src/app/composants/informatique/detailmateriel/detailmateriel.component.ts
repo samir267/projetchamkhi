@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Materiel } from 'src/app/models/materiel';
 
 @Component({
@@ -7,6 +7,8 @@ import { Materiel } from 'src/app/models/materiel';
   styleUrls: ['./detailmateriel.component.css']
 })
 export class DetailmaterielComponent implements OnInit {
+  affichage:boolean = true;
+
 
   materiel:Materiel ={
     id: '2',
@@ -23,8 +25,14 @@ export class DetailmaterielComponent implements OnInit {
    2020,10,4)}]
    };
 
-  constructor() { }
+   
 
+  constructor() { }
+  onaffiche()
+  {
+    this.affichage = !this.affichage; 
+  }
+  
   ngOnInit(): void {
   }
 

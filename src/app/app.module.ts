@@ -7,6 +7,7 @@ import { AcceuilComponent } from './composants/acceuil/acceuil.component';
 import { ListmaterielComponent } from './composants/informatique/listmateriel/listmateriel.component';
 import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
 import { DetailmaterielComponent } from './composants/informatique/detailmateriel/detailmateriel.component';
+import { CommentComponent } from './composants/commentaire/comment/comment.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { DetailmaterielComponent } from './composants/informatique/detailmaterie
     AcceuilComponent,
     ListmaterielComponent,
     MaterielComponent,
-    DetailmaterielComponent
+    DetailmaterielComponent,
+    CommentComponent
   ],
   imports: [
     BrowserModule,
