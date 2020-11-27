@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { AcceuilComponent } from './composants/acceuil/acceuil.component';
 import { ListmaterielComponent } from './composants/informatique/listmateriel/listmateriel.component';
 import { MaterielComponent } from './composants/informatique/materiel/materiel.component';
+import { DetailmaterielComponent } from './composants/informatique/detailmateriel/detailmateriel.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AcceuilComponent,
     ListmaterielComponent,
-    MaterielComponent
+    MaterielComponent,
+    DetailmaterielComponent
   ],
   imports: [
     BrowserModule,
