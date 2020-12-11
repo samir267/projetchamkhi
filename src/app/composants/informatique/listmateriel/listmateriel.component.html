@@ -1,7 +1,7 @@
 <h3 class="text-center pt-3">{{titre}}</h3>
 
 <div class="container">
-    <div class="row"><ng-container *ngFor="let t of materiels">
+    <div class="row"><ng-container *ngFor="let t of mat">
         <div class="col-4 pt-3" *ngIf="t.quantite>0">
            <sam-materiel [tab]="t"></sam-materiel>
         </div>
