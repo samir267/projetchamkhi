@@ -1,4 +1,5 @@
 import { Component, OnInit,Input } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Materiel } from 'src/app/models/materiel';
 
 @Component({
@@ -8,9 +9,11 @@ import { Materiel } from 'src/app/models/materiel';
 })
 export class MaterielComponent implements OnInit {
 @Input("tab")t:Materiel;
-  constructor() { }
-
+id:Number; 
+constructor(private activatedRoute:ActivatedRoute) { }
   ngOnInit(): void {
+    this.id=this.activatedRoute.snapshot.params['id'];
+
   }
 
 }
